@@ -1,7 +1,7 @@
 # Building-a-Real-Time-Mango-Grade-Recognition-System-Using-Jetson-Nano
 ## Overview
 
-Using AI to identify fruit grades, addressing shortage of fruit screeners during harvest season.
+Using Object Detection to identify fruit grades, addressing shortage of fruit screeners during harvest season.
 
 ## Main Features
 
