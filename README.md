@@ -1,15 +1,15 @@
 # Building-a-Real-Time-Mango-Grade-Recognition-System-Using-Jetson-Nano
 ## Overview
 
-Stock Dashboard is designed to provide comprehensive stock analysis and predictions, integrating various tools and data to assist investors in making informed decisions.
+Using AI to identify fruit grades, addressing shortage of fruit screeners during harvest season.
 
 ## Main Features
 
-- **Stock Information**
+-Reducing training costs by utilizing transfer learning to train object detection models.
 
-- **Technical Analysis**
-  - Technical Indicators
-  - Price Prediction
+-Enhancing recognition accuracy with a multi-faceted detection process designed on Jetson Nano Developer Kit.
+
+-Displaying recognition results in real-time on a mobile application using Google Cloud Platform.
 
 - **Sentiment Prediction**
 
