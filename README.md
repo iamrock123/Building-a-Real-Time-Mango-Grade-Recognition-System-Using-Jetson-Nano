@@ -1,7 +1,9 @@
 # Building-a-Real-Time-Mango-Grade-Recognition-System-Using-Jetson-Nano
 ## Overview
 
-Using Object Detection to identify fruit grades, addressing shortage of fruit screeners during harvest season.
+The concept of this work originates from the aging agricultural population, where during harvest seasons, farmers lack experienced fruit graders to help with sorting fruits by quality. This often results in farmers misjudging the grades, leading to financial losses. By using public dataset for training the mango grading model, enhances accuracy with multi-faceted detection process and using Jetson Nano for a cost-effective and efficient system, assisting farmers during fruit harvesting seasons when skilled fruit sorters are in short supply.
+
+This system also received an Honorable Mention in the 2023智慧感測聯網創新應用競賽-智慧視覺組
 
 ## Main Features
 
@@ -11,7 +13,17 @@ Using Object Detection to identify fruit grades, addressing shortage of fruit sc
 
 -Displaying recognition results in real-time on a mobile application using Google Cloud Platform.
 
-- **Sentiment Prediction**
+## Hardware Introduction
+
+1. **Jetson Nano 4GB Developer Kit**
+   *Please use the image of jetpack 4.6 for buliding this system, if you are the new for jetson, please check the information of the NVIDIA
+    Developer website below:
+   1.Get Started With Jetson Nano Developer Kit: https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
+   2.JetPack SDK 4.6 Release Page: https://developer.nvidia.com/embedded/jetpack-sdk-46
+
+3. **Logitech C270 HD WEBCAM**
+
+4. **LED, Button, BreadBoard, Dupont Line**
 
 ## How to Run
 
