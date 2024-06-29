@@ -42,7 +42,9 @@ To run this program, follow these steps:
     ```
 
 4. **Run the project with different version**
-   4.1 ***Running with Firebase of GCP***
+    If ./mango-grading.onnx is not working, please change the model of ssd-mobilenet.onnx.
+    If you wnat to use your own model, please check the website of NVIDIA: https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-ssd.md
+    4.1 ***Running with Firebase of GCP***
     - If running with Firebase of GCP, you need to install the Python SDK and setup from Firebase website: https://firebase.google.com/docs/admin/setup#python
     - Init firebase with your credentials from line 55 ~ 58:
     ```python
@@ -55,11 +57,18 @@ To run this program, follow these steps:
     ```sh
     python3 mango_detect_GCP.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
-    - Running with MQTT: 
+    4.2 ***Running with MQTT***
+    - If running with MQTT, you need to bulid your own MQTT Server from: https://mosquitto.org/ or using a Public MQTT Server online
+    - Changing to your own MQTT Server from line 173:
+    ```python
+    mqttc.connect("Your MQTT Topic ServerIP","Your MQTT Topic ServerPort")
+    ```
+    - Runng the python program of mango_detect_MQTT.py:
     ```sh
     python3 mango_detect_MQTT.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
-    - Running at Local: 
+    4.2 ***Running at Local***
+    - If you just want to display the information on the Jetson Nano, please run the mango_detect_local.py directly: 
     ```sh
     python3 mango_detect_local.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
