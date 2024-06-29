@@ -53,7 +53,7 @@ except:
 
 # Init firebase with your credentials
 cred = credentials.Certificate("Please Use Your Own Firebase Certificate")
-initialize_app(cred, {'storageBucket': 'mango-46711.appspot.com'})
+initialize_app(cred, {'storageBucket': 'your-own.appspot.com'})
 push_service = FCMNotification(api_key="Please Use Your Own API Key")
 registration_id = "Please Use Your Own Registration ID"
 
