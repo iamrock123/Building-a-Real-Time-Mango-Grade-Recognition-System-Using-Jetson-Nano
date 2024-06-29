@@ -77,3 +77,5 @@ To run this program, follow these steps:
 - [Get Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro)
 - [JetPack SDK 4.6 Release Page](https://developer.nvidia.com/embedded/jetpack-sdk-46)
 - [Re-training SSD-Mobilenet](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-ssd.md)
+- [Mosquitto](https://mosquitto.org/)
+- [Firebase](https://firebase.google.com/docs/admin/setup#python)
