@@ -42,19 +42,18 @@ To run this program, follow these steps:
     ```
 
 5. **Run the project with different version**
-    - Running at Local: 
+    - Running with Firebase of GCP: 
     ```sh
-    streamlit run .\streamlit_stock_app.py
+    python3 mango_detect_GCP.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
     - Running with MQTT: 
     ```sh
-    streamlit run .\streamlit_stock_app.py
+    python3 mango_detect_MQTT.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
-    - Running with Firebase of GCP: 
+    - Running at Local: 
     ```sh
-    streamlit run .\streamlit_stock_app.py
+    python3 mango_detect_local.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
-
 
 ## References
 
