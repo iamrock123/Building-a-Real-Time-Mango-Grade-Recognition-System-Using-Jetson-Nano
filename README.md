@@ -3,17 +3,17 @@
 
 The concept of this work originates from the aging agricultural population, where during harvest seasons, farmers lack experienced fruit graders to help with sorting fruits by quality. This often results in farmers misjudging the grades, leading to financial losses. By using public dataset for training the mango grading model, enhances accuracy with multi-faceted detection process and using Jetson Nano for a cost-effective and efficient system, assisting farmers during fruit harvesting seasons when skilled fruit sorters are in short supply.
 
-This system also received an Honorable Mention in the 2023智慧感測聯網創新應用競賽-智慧視覺組
+This system also received an Honorable Mention in the 2023智慧感測聯網創新應用競賽-智慧視覺組.
 
 Demo Youtube Link: 
 
 ## Main Features
 
--Reducing training costs by utilizing transfer learning to train object detection models.
+1. Reducing training costs by utilizing transfer learning to train object detection models.
 
--Enhancing recognition accuracy with a multi-faceted detection process designed on Jetson Nano Developer Kit.
+2. Enhancing recognition accuracy with a multi-faceted detection process designed on Jetson Nano Developer Kit.
 
--Displaying recognition results in real-time on a mobile application using Google Cloud Platform.
+3. Displaying recognition results in real-time on a mobile application using Google Cloud Platform.
 
 ## Hardware Introduction
 
@@ -31,18 +31,27 @@ To run this program, follow these steps:
     - Get Started With Jetson Nano Developer Kit: https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
     - JetPack SDK 4.6 Release Page: https://developer.nvidia.com/embedded/jetpack-sdk-46
 
-3. **Install the jetson-inference from dusty-nv**
+2. **Install the jetson-inference from dusty-nv**
    Two way to install jetson-inference.
     - Building the Project from Source: https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md
     - Running the Docker Container: https://github.com/dusty-nv/jetson-inference/blob/master/docs/aux-docker.md
       
-4. **Download this project**
+3. **Download this project**
     ```sh
    git clone https://github.com/iamrock123/Building-a-Real-Time-Mango-Grade-Recognition-System-Using-Jetson-Nano.git
     ```
 
-5. **Run the project with different version**
-    - Running with Firebase of GCP: 
+4. **Run the project with different version**
+   4.1 ***Running with Firebase of GCP***
+    - If running with Firebase of GCP, you need to install the Python SDK and setup from Firebase website: https://firebase.google.com/docs/admin/setup#python
+    - Init firebase with your credentials from line 55 ~ 58:
+    ```python
+    cred = credentials.Certificate("Please Use Your Own Firebase Certificate")
+    initialize_app(cred, {'storageBucket': 'your-own.appspot.com'})
+    push_service = FCMNotification(api_key="Please Use Your Own API Key")
+    registration_id = "Please Use Your Own Registration ID"
+    ```
+    - Runng the python program of mango_detect_GCP.py:
     ```sh
     python3 mango_detect_GCP.py --model=./mango-grading.onnx --labels=./labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
     ```
