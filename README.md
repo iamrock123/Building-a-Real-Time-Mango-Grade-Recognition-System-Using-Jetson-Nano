@@ -16,41 +16,30 @@ This system also received an Honorable Mention in the 2023智慧感測聯網創�
 ## Hardware Introduction
 
 1. **Jetson Nano 4GB Developer Kit**
-   *Please use the image of jetpack 4.6 for buliding this system, if you are the new for jetson, please check the information of the NVIDIA
-    Developer website below:
-   1.Get Started With Jetson Nano Developer Kit: https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
-   2.JetPack SDK 4.6 Release Page: https://developer.nvidia.com/embedded/jetpack-sdk-46
 
-3. **Logitech C270 HD WEBCAM**
+2. **Logitech C270 HD WEBCAM**
 
-4. **LED, Button, BreadBoard, Dupont Line**
+3. **LED, Button, BreadBoard, Dupont Line**
 
 ## How to Run
 
 To run this program, follow these steps:
 
-1. **Create a virtual environment (optional)**
+1. **Download the image of JetPack 4.6, and write it to the microSD for Jetson Nano**
+    - Get Started With Jetson Nano Developer Kit: https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
+    - JetPack SDK 4.6 Release Page: https://developer.nvidia.com/embedded/jetpack-sdk-46
+
+3. **Install the jetson-inference from dusty-nv**
+   Two way to install jetson-inference.
+    - Building the Project from Source: https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md
+    - Running the Docker Container: https://github.com/dusty-nv/jetson-inference/blob/master/docs/aux-docker.md
+      
+4. **Download this project**
     ```sh
-    conda create --name stockApp python==3.10.12
-    conda activate stockApp
+    streamlit run .\streamlit_stock_app.py
     ```
 
-2. **Install the Python dependencies**
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. **Enter your API key**
-    - Edit line 23:
-        ```python
-        os.environ["NVIDIA_API_KEY"] = "please enter your own api key"
-        ```
-    - Edit line 30:
-        ```python
-        api_key = 'please enter your own api key'
-        ```
-
-4. **Run the APP with Streamlit**
+5. **Run the APP with Streamlit**
     ```sh
     streamlit run .\streamlit_stock_app.py
     ```
