@@ -5,6 +5,8 @@ The concept of this work originates from the aging agricultural population, wher
 
 This system also received an Honorable Mention in the 2023智慧感測聯網創新應用競賽-智慧視覺組
 
+Demo Youtube Link: 
+
 ## Main Features
 
 -Reducing training costs by utilizing transfer learning to train object detection models.
@@ -36,10 +38,19 @@ To run this program, follow these steps:
       
 4. **Download this project**
     ```sh
-    streamlit run .\streamlit_stock_app.py
+   git clone https://github.com/iamrock123/Building-a-Real-Time-Mango-Grade-Recognition-System-Using-Jetson-Nano.git
     ```
 
-5. **Run the APP with Streamlit**
+5. **Run the project with different version**
+    - Running at Local: 
+    ```sh
+    streamlit run .\streamlit_stock_app.py
+    ```
+    - Running with MQTT: 
+    ```sh
+    streamlit run .\streamlit_stock_app.py
+    ```
+    - Running with Firebase of GCP: 
     ```sh
     streamlit run .\streamlit_stock_app.py
     ```
@@ -47,6 +58,6 @@ To run this program, follow these steps:
 
 ## References
 
-- [Stock Market Sentiment Prediction with OpenAI and Python](https://www.insightbig.com/post/stock-market-sentiment-prediction-with-openai-and-python)
-- [Algorithmic Trading & Quantitative Analysis Using Python](https://www.udemy.com/course/algorithmic-trading-quantitative-analysis-using-python/?couponCode=ST21MT61124)
+- [Get Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro)
+- [JetPack SDK 4.6 Release Page](https://developer.nvidia.com/embedded/jetpack-sdk-46)
 - [Financial Programming with Ritvik, CFA](https://www.youtube.com/watch?v=fdFfpEtv5BU&t=289s&ab_channel=FinancialProgrammingwithRitvik%2CCFA)
