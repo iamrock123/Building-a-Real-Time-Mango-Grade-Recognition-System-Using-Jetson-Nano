@@ -6,7 +6,7 @@ The inspiration for this project stems from the challenges faced by the aging ag
 
 This project received an Honorable Mention in the 2023 智慧感測聯網創新應用競賽-智慧視覺組.
 
-Demo YouTube Link: [Insert Link Here]
+Demo YouTube Link: [(https://www.youtube.com/watch?v=9HS7Ct9rbMo)]
 
 ## Main Features
 
